@@ -67,7 +67,5 @@ Open the project:
 Open the index.html file directly in your preferred web browser (or use a live server extension in VS Code).
 🤝 Connect & Acknowledgments
 Company: CodeAlpha   
-PDF
 Internship Domain: Frontend Development   
-PDF
 Feel free to explore the code, test out the features, and leave feedback!
