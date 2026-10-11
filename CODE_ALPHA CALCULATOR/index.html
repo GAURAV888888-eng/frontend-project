@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAlpha - Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator-container">
+    <div class="calculator">
+      <!-- Screen Display -->
+      <div class="display">
+        <div id="history" class="history"></div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <!-- Keypad Buttons -->
+      <div class="buttons">
+        <button class="btn function" onclick="clearAll()">AC</button>
+        <button class="btn function" onclick="deleteLast()">DEL</button>
+        <button class="btn function" onclick="appendInput('%')">%</button>
+        <button class="btn operator" onclick="appendInput('/')">÷</button>
+
+        <button class="btn" onclick="appendInput('7')">7</button>
+        <button class="btn" onclick="appendInput('8')">8</button>
+        <button class="btn" onclick="appendInput('9')">9</button>
+        <button class="btn operator" onclick="appendInput('*')">×</button>
+
+        <button class="btn" onclick="appendInput('4')">4</button>
+        <button class="btn" onclick="appendInput('5')">5</button>
+        <button class="btn" onclick="appendInput('6')">6</button>
+        <button class="btn operator" onclick="appendInput('-')">-</button>
+
+        <button class="btn" onclick="appendInput('1')">1</button>
+        <button class="btn" onclick="appendInput('2')">2</button>
+        <button class="btn" onclick="appendInput('3')">3</button>
+        <button class="btn operator" onclick="appendInput('+')">+</button>
+
+        <button class="btn zero" onclick="appendInput('0')">0</button>
+        <button class="btn" onclick="appendInput('.')">.</button>
+        <button class="btn equal" onclick="calculate()">=</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>ßß
