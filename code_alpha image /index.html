@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CodeAlpha - Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="gallery-container">
+    <h1>Interactive Image Gallery</h1>
+    
+    <!-- Category Filter Buttons (Bonus Feature) -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="nature">Nature</button>
+      <button class="filter-btn" data-filter="architecture">Architecture</button>
+      <button class="filter-btn" data-filter="technology">Technology</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid" id="gallery">
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=600&auto=format&fit=crop" alt="Mountain Lake">
+        <div class="overlay"><span>Mountain Lake</span></div>
+      </div>
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=600&auto=format&fit=crop" alt="Modern Skyscraper">
+        <div class="overlay"><span>Modern Skyscraper</span></div>
+      </div>
+      <div class="gallery-item" data-category="technology">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&auto=format&fit=crop" alt="Circuit Board">
+        <div class="overlay"><span>Circuit Board</span></div>
+      </div>
+      <div class="gallery-item" data-category="nature">
+        <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&auto=format&fit=crop" alt="Sunlight Forest">
+        <div class="overlay"><span>Sunlight Forest</span></div>
+      </div>
+      <div class="gallery-item" data-category="architecture">
+        <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=600&auto=format&fit=crop" alt="Cozy Interior">
+        <div class="overlay"><span>Cozy Interior</span></div>
+      </div>
+      <div class="gallery-item" data-category="technology">
+        <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop" alt="Cyber Code">
+        <div class="overlay"><span>Cyber Code</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox View Modal -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn" id="close-btn">&times;</span>
+    <button class="nav-btn prev-btn" id="prev-btn"><i class="fas fa-chevron-left"></i></button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="Enlarged view">
+      <div id="lightbox-caption" class="caption"></div>
+    </div>
+    <button class="nav-btn next-btn" id="next-btn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
